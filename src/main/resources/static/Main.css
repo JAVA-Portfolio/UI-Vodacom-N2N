@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff; /* White background for header */
+    color: #fff;
+    padding: 0; /* Remove padding to align with top */
+    margin: 0; /* Remove margin */
+    position: relative; /* Enable positioning context */
+}
+
+header .top-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Increased padding for more space */
+    background-color: #fff; /* White background for top space */
+    height: 80px; /* Height to match logo container */
+}
+
+header .logo-container {
+    width: 300px; /* Increased width of the logo container */
+    height: 80px; /* Height of the logo container */
+    background-image: url('Images/NewVodacom.png'); /* Path to your logo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 310px auto; /* Increased zoom level of the logo */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Move logo container to the left edge */
+    /* Optional: add transform for finer control */
+    /* transform: scale(1.3); */
+    /* transform-origin: left center; */
+}
+
+header nav {
+    background-color: #333; /* Black background for navigation */
+    padding: 10px 0; /* Increased padding for larger nav */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-right: 15px; /* Increased margin for larger spacing */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px; /* Increased font size for larger text */
+    padding: 5px 10px; /* Added padding for larger clickable area */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 50px; /* Increased padding for a bigger form */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Added max-width for better control */
+    width: 100%;
+}
+.login-form-wrapper {
+    text-align: center; /* Center align the entire form wrapper */
+}
+.login-form-wrapper h2 {
+    margin-bottom: 20px; /* Increased margin */
+    color: #333;
+}
+.input-field {
+    margin-bottom: 15px; /* Reduced margin */
+}
+.input-field input {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px; /* Increased font size for better readability */
+}
+.input-field input::placeholder {
+    color: #aaa; /* Color for placeholder text */
+}
+
+.actions {
+    display: flex;
+    justify-content: center; /* Center align the forgot password link */
+    align-items: center;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.actions .remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width to align center */
+}
+
+.actions .remember-me input {
+    margin-right: 4px; /* Reduced margin */
+}
+
+.actions a {
+    color: #c9302c; /* Red color */
+    text-decoration: none;
+    text-align: center; /* Center align the text */
+    width: 100%; /* Full width to align center */
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    background-color: #c9302c; /* Red color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+}
+
+.login-btn:hover {
+    background-color: #a3241c; /* Darker red */
+}
+
+.register {
+    text-align: center;
+}
+
+.register p {
+    margin: 0;
+}
+
+.register a {
+    color: #c9302c; /* Red color */
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.slogan-section {
+    text-align: center;
+    margin: 0;
+    background-color: #c9302c; /* Red color */
+    color: #fff;
+    padding: 5px 0; /* Reduced padding */
+    font-size: 10px; /* Smaller font size */
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0; /* Reduced padding */
+    background-color: #333; /* Dark background for footer */
+    color: darkgrey;
+    margin: 0;
+    font-size: 8px; /* Smaller font size */
+}

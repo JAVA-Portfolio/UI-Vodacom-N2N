@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N2N Login</title>
+    <link rel="stylesheet" th:href="@{/Main.css}">
+</head>
+<body>
+<header>
+    <div class="top-space">
+        <div class="logo-container"></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">N2N Data Management</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="login-container">
+        <!-- Login form wrapper -->
+        <div class="login-form-wrapper">
+            <h2>Login</h2>
+            <form th:action="@{/login}" method="post">
+                <div class="input-field">
+                    <input type="text" id="login-username" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="login-password" name="password" placeholder="Password" required>
+                </div>
+                <div class="actions">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+        </div>
+    </div>
+</main>
+<section class="slogan-section">
+    <h2>Further Together.</h2>
+</section>
+<footer>
+    <p>&copy; 2024 Vodacom. All rights reserved.</p>
+</footer>
+</body>
+</html>

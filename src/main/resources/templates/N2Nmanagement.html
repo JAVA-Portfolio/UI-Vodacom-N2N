@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Application Dashboard</title>
+    <link rel="stylesheet" th:href="@{/N2Nmanagement.css}">
+</head>
+<body>
+<div class="top-bar">
+    <div class="user-info">
+        <!-- Placeholder for user icon -->
+        <div class="user-icon-placeholder"></div>
+    </div>
+    <div class="logout">
+        <form th:action="@{/logout}" method="post">
+            <button type="submit">
+                <!-- Placeholder for logout icon -->
+                <span class="logout-icon-placeholder"></span>
+                Logout
+            </button>
+        </form>
+    </div>
+</div>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#">Discrepancy Management</a>
+            <ul>
+                <li><a href="#" data-content="upload">Upload Discrepancy</a></li>
+                <li><a href="#" data-content="manage">Manage Discrepancies</a></li>
+                <li><a href="#" data-content="statistics">Discrepancy Statistics</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Incidents Management</a>
+            <ul>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Error Management</a>
+            <ul>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">N2N Library</a>
+            <ul>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="main-body" id="main-body">
+    <div class="company-logo">
+        <!-- Placeholder for company logo -->
+        <div class="company-logo-placeholder"></div>
+    </div>
+    <div class="n2n-label">
+        <h1>N2N</h1>
+    </div>
+</div>
+
+<div class="footer">
+    <p class="slogan">Further Together.</p>
+    <p class="privacy">&copy; 2024 Company Name. All rights reserved.</p>
+</div>
+
+</body>
+</html>
